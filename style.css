@@ -1,0 +1,461 @@
+.header {
+  background-color: #e1853d;
+  text-align: center;
+  height: fit-content;
+  color: azure;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.header p {
+  margin: 0;
+}
+
+.main-page{
+  display: flex;
+  flex-direction: column;
+}
+.button1 a{
+  color: white;
+}
+.button1 a:focus{
+  color: #e1853d;; /* Màu chữ cho liên kết chưa được chọn */
+}
+.button1 a:hover{
+  color: #e1853d;; /* Màu chữ cho liên kết chưa được chọn */
+}
+.tabs-large-devices{
+  padding-top: 15px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.double-rectangle{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.sing-rec{
+  width: 100px;
+  height: 30px;
+  background: #e1853d;
+  /* color: white; */
+  align-items: center;
+  text-align: center;
+  padding: 7px;
+}
+.button1 {
+  padding: 10px 50px;
+  background: #e1853d;
+  /* color: white; */
+  align-items: center;
+  text-align: center;
+
+}
+.button1:hover{
+  background-color: #f2f2f2;
+  color: #e1853d;
+  font-weight: bold;
+}
+.button1:focus{
+  background-color: #f2f2f2;
+  color: #e1853d;
+  font-weight: bold;
+}
+.tabs-large-devices .hyperlink {
+  
+  background:white;
+  text-align: center;  
+  padding-right: 10px;
+  
+}
+.tabs-large-devices .hyperlink a{
+  color: black;
+}
+
+.tabs-large-devices .hyperlink a:focus{
+  color: #e1853d; /* Màu sẽ thay đổi khi bạn chọn liên kết */
+}
+.tabs-large-devices .hyperlink a:hover{
+  color: #e1853d; /* Màu sẽ thay đổi khi bạn chọn liên kết */
+}
+
+.info-overview {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-bottom: 40px;
+}
+.info-overview .avatar{
+  width: 300px; /* Kích thước cố định cho avatar */
+  height: 300px; /* Kích thước cố định cho avatar */
+  overflow: hidden; /* Để ảnh không tràn ra ngoài phần giới hạn */
+  
+}
+.info-overview .avatar img{
+  width: 100%; /* Kích thước cố định cho avatar */
+  height: 100%; /* Kích thước cố định cho avatar */
+  object-fit: cover; /* Để ảnh không tràn ra ngoài phần giới hạn */
+}
+
+
+.info-overview .profile{  
+  padding-left: 40px; /* Khoảng cách từ hình ảnh đến lề trái */
+}
+
+.info-overview .profile .infor{
+  display: flex;
+  flex-direction: row;
+}
+.info-overview .profile .infor .col-label{
+  font-weight: bold;
+  display: block;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 10px;
+}
+.info-overview .profile .infor .col-content{
+  font-weight: normal;
+  display: block;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.info-detail{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.title{
+  font-size: 18pt;
+  font-weight: bold;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.content-script{
+  font-size:12pt;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.info-detail .content-script .head p{
+  margin:0%;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+.info-detail .content-script p{
+  margin:0%;
+  padding-bottom: 10px;
+  padding-top: 5px;
+  
+}
+
+.more-infor{
+  display: flex;
+  flex-direction: column;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 40px;
+}
+   
+.left-column {
+  border-right: 1px solid #e1853d;   
+  width: 80%
+}
+  
+.right-column {
+  padding: 10px;
+  padding-top: 50px;
+  width: 20%;
+}
+.bold{
+  font-weight: bold;
+}
+li{
+  display: flex;
+  flex-direction: row;
+}
+
+.group-tables{
+  padding: 7pt;
+}
+.modified-table-var1{
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray ;
+  
+}
+.modified-table-var2{
+  width: 100%;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid gray ;
+  
+}
+.col1{
+  border-right: 0.5pt solid gray;
+  padding-right: 40px;
+  padding-left: 10px;
+}
+li::before{
+  font-weight: bold;
+}
+li::after{
+  font-weight: normal;
+}
+
+
+.row{
+  display: flex;
+  flex-direction: column;
+  height: 30px;  
+  text-align: left;  
+  justify-content: center;
+}
+.row3{
+  display: flex;
+  flex-direction: column;
+  height: 30px;  
+  text-align: left;  
+  justify-content: center;
+}
+.col2 .row{
+  display: flex;
+  flex-direction: column;
+  height: 30px;  
+  text-align: left;  
+  justify-content: center;
+  padding-left: 10px;
+}
+p > span {
+  display: inline-block;
+  font-weight: bold;
+  width: 150px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+table {
+  width: 98%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+  
+th, td {
+  width: 33.33%;
+  border: 1px solid antiquewhite;
+  padding: 8px;
+  text-align: left;
+}
+  
+thead tr {
+  background-color: #e1853d;
+  color: azure;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Màu nền xám */
+}
+
+footer {
+  background-color: #f2f2f2; /* Màu nền xám */
+  padding: 10px; /* Thêm khoảng cách để tạo khoảng trống */
+  text-align: center;
+  height: fit-content;
+}
+h1
+{
+  font-size: 30px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h2
+{
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+ 
+@media only screen and (min-width: 1024px) {
+  /* desktop */
+  .tabs-small-devices{
+    display: none;
+  }
+  .career-info-desktop{
+    display: block;  
+  }
+  .info-overview .profile .more-infor{
+    display: none;
+  }
+  
+  .main-page .tabs-large-devices{
+    display: none;
+  }
+  .main-page .body-container .left-column .tabs-large-devices{
+    display: flex;
+  }
+  .right-column .career-info-smaller-devices{
+    display:none;
+  }
+  .right-column .info-detail{
+    display: none;
+  }
+} 
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+   /* tablet */
+  .header{
+    background: white;
+    color:#e1853d
+  }
+  .main-page .header p{
+    color: black;
+  }
+  
+  .career-info-desktop{
+    display: none;
+  }
+  .left-column .tabs-large-devices{
+    display: none;
+  }
+  .left-column{
+    width:50%;
+    background: #f2f2f2;
+    border-right: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .right-column{
+    width: 50%;
+    display: block;
+    justify-content: space-between;
+  }
+  .body-container{
+    flex-direction: row;
+  }
+  .info-overview{
+    flex-direction: column;
+  }
+  .info-overview .avatar{
+    width: 450px; /* Kích thước cố định cho avatar */
+    height: 450px; /* Kích thước cố định cho avatar */
+  }
+  .info-overview .profile{
+    padding-left: none;
+    align-items: center;
+    /* text-align: center; */
+
+  }
+  .info-overview .profile h1{
+    color:#e1853d;
+  }
+  .tabs-large-devices .hyperlink a{
+    font-size: xx-large;
+  }
+  .tabs-small-devices{
+    display: none;
+  }
+  .right-column .more-infor{
+    display: none;
+  }
+  .right-column .career-info-smaller-devices{
+    display: flex;
+    flex-direction: column;
+  }
+  .left-column .info-detail{
+    display: none;
+  }
+
+}
+
+ @media only screen and (min-width: 321px) and (max-width: 480px) { 
+  /* mobile L */
+  .header{
+    background: white;
+    color:#e1853d
+  }
+  .main-page .header p{
+    color: black;
+  }
+  .main-page .tabs-large-devices{
+    display: none;
+  }
+  .left-column .tabs-large-devices{
+    display: none;
+  }
+
+  .tabs-small-devices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+
+  }
+  .career-info-desktop{
+    display: none;
+  }
+  .right-column{
+    display: none;
+  }
+  .left-column{
+    width: 100%;
+  }
+  .info-overview .profile h1{
+    text-align: center;
+    font-size: xxx-large;
+  }
+  h2{
+    text-align: center;
+    font-size: xxx-large;
+  }
+  .info-overview .avatar{
+    width: 85%;
+    height: fit-content;
+  }
+  .double-rectangle{
+    padding: 20px;
+    width: 50%;
+  }
+  .left-column .info-detail{
+    display: flex;
+    background: white;
+    padding: 20pt;
+  }
+  .group-tables{
+    background-color: white;
+  }
+  .left-column .info-detail .title{
+    background-color: white;
+    color: #e1853d;
+  }
+  .left-column .career-info-smaller-devices .title{
+    background-color: white;
+    color: #e1853d;
+  }
+  .title{
+    text-align: center;
+  }
+  .col1{
+    width: 30%;
+  }
+  
+
+
+}
+
+@media only screen and (max-width: 320px) {
+  
+  
+  
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <script type="text/javascript" nonce="2b78aa6cbedd4f62a183127cbf7" src="//local.adguard.org?ts=1696334760811&amp;type=content-script&amp;dmn=cdn.fbsbx.com&amp;url=https%3A%2F%2Fcdn.fbsbx.com%2Fv%2Ft59.2708-21%2F385006609_1452535438931328_7957641530974028423_n.html%2Fhtml_css.html%3F_nc_cat%3D109%26ccb%3D1-7%26_nc_sid%3D0cab14%26_nc_ohc%3De_LCqLpLmZIAX9eGLZI%26_nc_oc%3DAQmFcI_vF0qZAYLKep6tC0N9WqDMKifrYyg-1uk2bTBx5vwV4J-Hv_p_4_-W3LlCDMOo62ksSOnNXTnajne2JYg4%26_nc_ht%3Dcdn.fbsbx.com%26oh%3D03_AdSyMXg0RuvMTxZYJCZjVK-EFbK2SCV2wiN7BE0Ez6rJZA%26oe%3D651DBC20%26dl%3D1&amp;app=chrome.exe&amp;css=3&amp;js=1&amp;rel=1&amp;rji=1&amp;sbe=1"></script>
+<script type="text/javascript" nonce="2b78aa6cbedd4f62a183127cbf7" src="//local.adguard.org?ts=1696334760811&amp;name=AdGuard%20Extra&amp;name=AdGuard%20Popup%20Blocker&amp;type=user-script"></script><link rel="stylesheet" href="style.css">
+      <script>
+         window.onload = function() {
+           var links = document.getElementsByTagName("a"); // Lấy tất cả các phần tử <a>
+     
+           // Đặt sự kiện click cho từng phần tử <a>
+           for (var i = 0; i < links.length; i++) {
+             links[i].addEventListener("click", function() {
+               // Xóa lớp 'orange-link' từ tất cả các phần tử <a>
+               for (var j = 0; j < links.length; j++) {
+                 links[j].classList.remove("orange-link");
+               }
+     
+               // Thêm lớp 'orange-link' vào phần tử <a> được click
+               this.classList.add("orange-link");
+             });
+           }
+         };
+       </script>
+   </head>
+   <body>
+      <div class="main-page">  
+         <div class="header" >
+            <h1>LỚP LẬP TRÌNH ỨNG DỤNG WEB</h1>
+            <p>Khoa Mạng máy tính & Truyền thông</p>
+         </div>
+         <div class="tabs-large-devices">
+            <div class="hyperlink">
+            <a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html">CSS v1</a>
+            </div>               
+            <div class="hyperlink">
+            <a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html">CSS v2</a>
+            </div>            
+            <div class="hyperlink"><a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html" >CSS v3</a></div>               
+            <div class="hyperlink"><a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html" >CSS v0 (Not style)</a></div>            
+         </div>
+         <div class="tabs-small-devices">
+            <div class="double-rectangle">
+               <div class="button1"> <a  href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html">CSS v1</a></div><br>
+               <div class="button1"> <a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html">CSS v2</a></div>
+            </div>
+            <div class="double-rectangle">
+               <div class="button1"> <a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html">CSS v3</a></div><br>
+               <div class="button1"> <a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html">CSS v4</a></div>
+            </div>
+         </div>
+         <div class="body-container">
+            <div class="left-column">
+               <div class="tabs-large-devices">
+                  <div class="hyperlink">
+                  <a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html">CSS v1</a>
+                  </div>               
+                  <div class="hyperlink">
+                  <a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html">CSS v2</a>
+                  </div>
+                  <!-- <script>
+                     // Sử dụng JavaScript để thay đổi màu khi click
+                     document.querySelector(".modified-hyperlink a").addEventListener("click", function() {
+                        this.style.color = "#e1853d";
+                     });
+               </script> -->
+                  <div class="hyperlink"><a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html" >CSS v3</a></div>               
+                  <div class="hyperlink"><a href="C:\Users\DELL\Downloads\New folder\ass2\html_css.html" >CSS v0 (Not style)</a></div>
+                  
+               </div>
+               
+               
+               <div class="info-overview">
+                  <div class="avatar">
+                     <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQyArdOTBJcsXaZ_IspSf8qAUU5DJPo7a2ZGN-xTrN_chSHC8RH">
+                  </div>
+                  <div class="profile">
+                     <h1> Nguyễn Văn A </h1>
+                     <h2> Lập trình viên Frontend </h2>
+                     <div class="infor">                   
+                        <div class="col-label">
+                           <p>Ngày Sinh: </p>
+                           <p>Giới tính: </p>
+                           <p>Địa chỉ: </p> 
+                        </div>
+                        <div class="col-content">
+                           <p>23/10/1955</p>
+                           <p>Nam</p>
+                           <p>Thuận An, Bình Dương</p>
+                        </div>   
+                     </div>
+                     <div class="more-infor">
+                        <div class="title">GIỚI THIỆU</div>
+                        <div class="content-script">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugait nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                        </div>
+                        <div class="title">LIÊN HỆ VỚI TÔI</div> 
+                        <ul>
+                           <li> <div class="bold">ĐT:</div> <a href="", style="color: black; padding-left: 7px;"> 0984752222</a></li>
+                           <li><div class="bold">Email:</div> <a href="mailto:21520667@gm.uit.edu.vn"style="color:black; padding-left: 7px;">21520667@gm.uit.edu.vn</a></li>
+                           <li><div class="bold">Fb:</div><a href="https://www.facebook.com/huycuongattt"style="color:black; padding-left: 7px;">Huy Cuong</a></li>
+                        </ul>
+                        <p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit</p>
+      
+                     </div>
+                  </div>
+                  
+               </div>
+               
+                  <div class="info-detail">
+                     <div class="title">MỤC TIÊU NGHỀ NGHIỆP</div>
+                     <div class="content-script">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugait nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                     </div>
+                     <div class="title">HỌC VẤN</div>
+                     <div class="content-script">
+                        <div class="head">
+                           <p>Đại học Công nghệ thông tin - ĐHQG TP HCM</p>
+                           <p>Truyền thông và mạng máy tính</p>
+                        </div>
+                        <p>GPA: 9.0</p>   
+                        <p>Tốt nghiệp: Giỏi</p>
+                        <div class="head">
+                           <p>THPT Chuyên Hùng Vương - Bình Dương</p>
+                           <!-- <p>Truyền thông và mạng máy tính</p> -->
+                        </div>
+                        <p>Ban Tự Nhiên</p>
+                        <p>Tốt nghiệp: Giỏi</p>
+                     </div>
+                  </div>
+                  <div class="career-info-smaller-devices">
+                     <div class="title">CÔNG VIỆC</div>
+                     <div class="group-tables">
+                        <div class="modified-table-var1">
+                           <div class="col1">
+                              <div class="row">Vị trí</div>
+                              <div class="row">Đơn vị</div>
+                              <div class="row">Thời gian</div>
+                           </div>
+                           <div class="col2">
+                              <div class="row">Lập trình viên</div>
+                              <div class="row">FPT Quận 9</div>
+                              <div class="row">Tháng 3/2019 - 5/2021</div>
+                           </div>
+                        </div>
+                        <div class="modified-table-var2">
+                           <div class="col1">
+                              <div class="row">Vị trí</div>
+                              <div class="row">Đơn vị</div>
+                              <div class="row">Thời gian</div>
+                           </div>
+                           <div class="col2">
+                              <div class="row">Leader</div>
+                              <div class="row">Công ty ABC</div>
+                              <div class="row">Tháng 6/2021 - 10/2025</div>
+                           </div>
+                        </div>
+                        <div class="modified-table-var1">
+                           <div class="col1">
+                              <div class="row">Vị trí</div>
+                              <div class="row">Đơn vị</div>
+                              <div class="row">Thời gian</div>
+                           </div>
+                           <div class="col2">
+                              <div class="row">Giám đốc</div>
+                              <div class="row">Công ty BX</div>
+                              <div class="row">Tháng 9/2025 - nay</div>
+                           </div>
+                        </div>
+                        <div class="modified-table-var2">
+                           <div class="col1">
+                              <div class="row">Vị trí</div>
+                              <div class="row">Đơn vị</div>
+                              <div class="row">Thời gian</div>
+                           </div>
+                           <div class="col2">
+                              <div class="row">Ernst Handle</div>
+                              <div class="row">Roland Mendel</div>
+                              <div class="row">Austria</div>
+                           </div>
+                        </div>
+                     </div>
+
+               </div>
+               <div class="career-info-desktop">
+                  <div class="title">CÔNG VIỆC</div>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th>Vị trí</th>
+                           <th>Đơn vị</th>
+                           <th>Thời gian</th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <td>Lập trình viên</td>
+                           <td>FPT Quận 9</td>
+                           <td>Tháng 3/2019 - 5/2021</td>
+                        </tr>
+                        <tr>
+                           <td>Leader</td>
+                           <td>Công ty ABC</td>
+                           <td>Tháng 6/2021 - 10/2025</td>
+                        </tr>
+                        <tr>
+                           <td>Giám đốc</td>
+                           <td>Công ty BX</td>
+                           <td>Tháng 9/2025 - nay</td>
+                        </tr>
+                        <tr>
+                           <td>Ernst Handle</td>
+                           <td>Roland Mendel</td>
+                           <td>Austria</td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               
+            </div>
+            <div class="right-column">
+               <div class="more-infor">
+                  <div class="title">GIỚI THIỆU</div>
+                  <div class="content-script">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugait nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                  </div>
+                  <div class="title">LIÊN HỆ VỚI TÔI</div> 
+                  <ul>
+                     <li> <div class="bold">ĐT:</div> <a href="", style="color: black; padding-left: 7px;"> 0984752222</a></li>
+                     <li><div class="bold">Email:</div> <a href="mailto:21520667@gm.uit.edu.vn"style="color:black; padding-left: 7px;">21520667@gm.uit.edu.vn</a></li>
+                     <li><div class="bold">Fb:</div><a href="https://www.facebook.com/huycuongattt"style="color:black; padding-left: 7px;">Huy Cuong</a></li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit</p>
+
+               </div>
+               <div class="info-detail">
+                  <div class="title">MỤC TIÊU NGHỀ NGHIỆP</div>
+                  <div class="content-script">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugait nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+                  </div>
+                  <div class="title">HỌC VẤN</div>
+                  <div class="content-script">
+                     <div class="head">
+                        <p>Đại học Công nghệ thông tin - ĐHQG TP HCM</p>
+                        <p>Truyền thông và mạng máy tính</p>
+                     </div>
+                     <p>GPA: 9.0</p>   
+                     <p>Tốt nghiệp: Giỏi</p>
+                     <div class="head">
+                        <p>THPT Chuyên Hùng Vương - Bình Dương</p>
+                        <!-- <p>Truyền thông và mạng máy tính</p> -->
+                     </div>
+                     <p>Ban Tự Nhiên</p>
+                     <p>Tốt nghiệp: Giỏi</p>
+                  </div>
+               </div>
+               <div class="career-info-smaller-devices">
+                  <div class="title">CÔNG VIỆC</div>
+                  <div class="group-tables">
+                     <div class="modified-table-var1">
+                        <div class="col1">
+                           <div class="row">Vị trí</div>
+                           <div class="row">Đơn vị</div>
+                           <div class="row">Thời gian</div>
+                        </div>
+                        <div class="col2">
+                           <div class="row">Lập trình viên</div>
+                           <div class="row">FPT Quận 9</div>
+                           <div class="row">Tháng 3/2019 - 5/2021</div>
+                        </div>
+                     </div>
+                     <div class="modified-table-var2">
+                        <div class="col1">
+                           <div class="row">Vị trí</div>
+                           <div class="row">Đơn vị</div>
+                           <div class="row">Thời gian</div>
+                        </div>
+                        <div class="col2">
+                           <div class="row">Leader</div>
+                           <div class="row">Công ty ABC</div>
+                           <div class="row">Tháng 6/2021 - 10/2025</div>
+                        </div>
+                     </div>
+                     <div class="modified-table-var1">
+                        <div class="col1">
+                           <div class="row">Vị trí</div>
+                           <div class="row">Đơn vị</div>
+                           <div class="row">Thời gian</div>
+                        </div>
+                        <div class="col2">
+                           <div class="row">Giám đốc</div>
+                           <div class="row">Công ty BX</div>
+                           <div class="row">Tháng 9/2025 - nay</div>
+                        </div>
+                     </div>
+                     <div class="modified-table-var2">
+                        <div class="col1">
+                           <div class="row">Vị trí</div>
+                           <div class="row">Đơn vị</div>
+                           <div class="row">Thời gian</div>
+                        </div>
+                        <div class="col2">
+                           <div class="row">Ernst Handle</div>
+                           <div class="row">Roland Mendel</div>
+                           <div class="row">Austria</div>
+                        </div>
+                     </div>
+                  </div>
+
+               </div>
+               
+            </div>
+
+         </div>
+         <footer>
+            <p>
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugait nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            </p>
+         </footer>
+      </div> 
+   </body>
+</html>
+<!-- <script>
+   document.getElementById("modified-hyperlink").onclick = function() {myFunction()};
+   
+   function myFunction() {
+      var aElement = document.getElementById("a");
+      aElement.style.color = "#e1853d";
+   }
+
+</script> -->
