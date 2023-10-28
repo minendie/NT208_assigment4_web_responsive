@@ -9,10 +9,12 @@
 
 .header h1 {
   margin: 0;
+  font-size: 3vw;
 }
 
 .header p {
-  margin: 0;
+  margin: 0;  
+  font-size: 1.5vw;
 }
 
 .main-page{
@@ -31,7 +33,7 @@
 .tabs-large-devices{
   padding-top: 15px;
   padding-bottom: 30px;
-  display: flex;
+  /* display: flex; */
   justify-content: flex-start;
 }
 
@@ -76,6 +78,7 @@
 }
 .tabs-large-devices .hyperlink a{
   color: black;
+  font-size: 1.5vw;
 }
 
 .tabs-large-devices .hyperlink a:focus{
@@ -84,7 +87,10 @@
 .tabs-large-devices .hyperlink a:hover{
   color: #e1853d; /* Màu sẽ thay đổi khi bạn chọn liên kết */
 }
-
+ul{
+  margin: 0;
+  padding: 0;
+}
 .info-overview {
   display: flex;
   align-items: center;
@@ -106,7 +112,7 @@
 
 
 .info-overview .profile{  
-  padding-left: 40px; /* Khoảng cách từ hình ảnh đến lề trái */
+  padding-left: 30px; /* Khoảng cách từ hình ảnh đến lề trái */
 }
 
 .info-overview .profile .infor{
@@ -115,14 +121,18 @@
 }
 .info-overview .profile .infor .col-label{
   font-weight: bold;
-  display: block;
+  font-size: 1.3vw;
+  /* display: block; */
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   padding-right: 10px;
 }
 .info-overview .profile .infor .col-content{
   font-weight: normal;
-  display: block;
+  font-size: 1.3vw;
+  /* display: block; */
+  display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
@@ -132,7 +142,7 @@
   justify-content: flex-start;
 }
 .title{
-  font-size: 18pt;
+  font-size: 2vw;
   font-weight: bold;
   padding-bottom: 15px;
   display: flex;
@@ -140,11 +150,13 @@
   justify-content: flex-start;
 }
 .content-script{
-  font-size:12pt;
+  font-size:1.3vw;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  text-align: justify;
+  padding-right:10pt;
 }
 .info-detail .content-script .head p{
   margin:0%;
@@ -175,20 +187,25 @@
 }
   
 .right-column {
-  padding: 10px;
+  padding-left: 10px;
   padding-top: 50px;
   width: 20%;
 }
 .bold{
   font-weight: bold;
+  font-size: 1.2vw;
 }
+a{
+  font-size: 1.2vw;
+}
+
 li{
   display: flex;
   flex-direction: row;
 }
 
 .group-tables{
-  padding: 7pt;
+  padding: 7px;
 }
 .modified-table-var1{
   width: 100%;
@@ -207,7 +224,7 @@ li{
   
 }
 .col1{
-  border-right: 0.5pt solid gray;
+  border-right: 0.5px solid gray;
   padding-right: 40px;
   padding-left: 10px;
 }
@@ -259,6 +276,7 @@ th, td {
   border: 1px solid antiquewhite;
   padding: 8px;
   text-align: left;
+  font-size: 1.3vw;
 }
   
 thead tr {
@@ -274,15 +292,16 @@ footer {
   padding: 10px; /* Thêm khoảng cách để tạo khoảng trống */
   text-align: center;
   height: fit-content;
+  font-size: 1.3vw;
 }
 h1
 {
-  font-size: 30px;
+  font-size: 3vw;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 h2
 {
-  font-size: 20px;
+  font-size: 2vw;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
  
@@ -292,10 +311,19 @@ h2
     display: none;
   }
   .career-info-desktop{
-    display: block;  
+    /* display: block;   */
+    display: flex;
+    flex-direction: column;
   }
   .info-overview .profile .more-infor{
     display: none;
+  }
+  .right-column{
+    /* padding-left:10px;
+    padding: 0; */
+  }
+  .right-column .more-infor p{
+  font-size: 1.3vw;
   }
   
   .main-page .tabs-large-devices{
@@ -306,6 +334,9 @@ h2
   }
   .right-column .career-info-smaller-devices{
     display:none;
+  }
+  .career-info-smaller-devices{
+    display: none;
   }
   .right-column .info-detail{
     display: none;
@@ -321,11 +352,25 @@ h2
   .main-page .header p{
     color: black;
   }
+  /* h1{
+    font-size: 28pt;
+  } */
+  .info-overview .profile .infor .col-label{
+    width: 30%;
+  }
+  .info-overview .profile .infor .col-label p{
+    width: fit-content;
+    height: fit-content;
+  }
   
   .career-info-desktop{
     display: none;
   }
-  .left-column .tabs-large-devices{
+  .main-page .tabs-large-devices{
+    display: flex;
+
+  }
+  .main-page .body-container .left-column .tabs-large-devices{
     display: none;
   }
   .left-column{
@@ -337,8 +382,21 @@ h2
   }
   .right-column{
     width: 50%;
-    display: block;
-    justify-content: space-between;
+    /* display: block; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 10pt;
+    font-size: fit-width;
+    
+  }
+  a{
+    font-size: 2vw;
+  }
+  .bold{
+    font-size: 2vw;
+  }
+  .profile .more-infor p{
+    font-size:2vw
   }
   .body-container{
     flex-direction: row;
@@ -347,8 +405,8 @@ h2
     flex-direction: column;
   }
   .info-overview .avatar{
-    width: 450px; /* Kích thước cố định cho avatar */
-    height: 450px; /* Kích thước cố định cho avatar */
+    width: 85%; /* Kích thước cố định cho avatar */
+    height: fit-content; /* Kích thước cố định cho avatar */
   }
   .info-overview .profile{
     padding-left: none;
@@ -360,7 +418,7 @@ h2
     color:#e1853d;
   }
   .tabs-large-devices .hyperlink a{
-    font-size: xx-large;
+    font-size: 2vw;
   }
   .tabs-small-devices{
     display: none;
@@ -372,8 +430,43 @@ h2
     display: flex;
     flex-direction: column;
   }
+  .career-info-smaller-devices{
+    display: none;
+  }
   .left-column .info-detail{
     display: none;
+  }
+  .content-script{
+    font-size: 2vw;
+  }
+  .title{
+    font-size: 2vw;
+  }
+  .info-overview .profile h1{
+    font-size:3vw;
+  }
+  .info-overview .profile h2{
+    font-size:2vw;
+  }
+  .info-overview .profile .infor .col-content{
+    font-size:2vw;
+
+  }
+  .info-overview .profile .infor .col-label{
+    font-size: 2vw;
+  }
+  /* li{
+    font-size: 18pt;
+  } */
+  
+  .row{
+    font-size: 2vw;
+  }
+  footer{
+    font-size: 2vw;
+  }
+  .main-page .header p{
+    font-size:2vw;
   }
 
 }
@@ -382,25 +475,56 @@ h2
   /* mobile L */
   .header{
     background: white;
-    color:#e1853d
+    color:#e1853d;
   }
-  .main-page .header p{
+  .header h1{
+    font-size: 5vw;
+  }
+  /* h1{
+    font-size: 15pt;
+  } */
+  .header p{
     color: black;
+    font-size: 4vw;
   }
   .main-page .tabs-large-devices{
     display: none;
   }
-  .left-column .tabs-large-devices{
+  .main-page .body-container .left-column .tabs-large-devices{
     display: none;
+  }
+  a{
+    font-size: 3vw;
+  }
+  .bold{
+    font-size: 3vw;
+  }
+  .info-overview .profile .infor .col-label{
+    font-size: 3.5vw;
+  }
+  .info-overview .profile .infor .col-content{
+    font-size: 3.5vw;
+  }
+  .content-script{
+    padding-right: 7pt;
+    font-size: 3vw;
+  }
+  .info-detail .content-script{
+    padding-left: 7pt;
+  }
+  .info-overview .profile{
+    padding-left: 20px;
   }
 
   .tabs-small-devices{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    
+    flex-direction: row;    
 
+  }
+  .space{
+    padding:3pt;
   }
   .career-info-desktop{
     display: none;
@@ -413,24 +537,36 @@ h2
   }
   .info-overview .profile h1{
     text-align: center;
-    font-size: xxx-large;
+    font-size: 5vw;
+    color: #e1853d;
   }
+  .info-overview{
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f2f2f2;
+  }
+  
+  .left-column{
+    border-right: none;
+  }
+  
   h2{
     text-align: center;
-    font-size: xxx-large;
+    font-size:4vw;
   }
   .info-overview .avatar{
     width: 85%;
     height: fit-content;
   }
   .double-rectangle{
-    padding: 20px;
+    padding: 5px;
     width: 50%;
   }
   .left-column .info-detail{
     display: flex;
     background: white;
-    padding: 20pt;
+    padding-top: 20px;
   }
   .group-tables{
     background-color: white;
@@ -438,24 +574,144 @@ h2
   .left-column .info-detail .title{
     background-color: white;
     color: #e1853d;
+    text-decoration: underline;
   }
   .left-column .career-info-smaller-devices .title{
     background-color: white;
     color: #e1853d;
+    text-decoration: underline;
   }
   .title{
     text-align: center;
+    font-size: 4vw;
   }
   .col1{
-    width: 30%;
+    width: 25%;
   }
-  
+  .info-overview .profile{
+    padding-left: 5%;
+  }
+  .info-detail .content-script{
+    padding-left: 10px;
+  }
+  .profile .more-infor p{
+    font-size: 3vw;
+  }
+  .row{
+    font-size: 4vw;
+  }
+  footer{
+    font-size: 3vw;
+  }
 
 
 }
 
 @media only screen and (max-width: 320px) {
-  
-  
-  
+  .header{
+    background-color:white;
+  }
+  .header h1{
+    font-size: 5vw;
+    color: #e1853d;
+  }
+  .header p{
+    color: black;
+    font-size: 3.5vw;
+  }
+  a{
+    font-size: 5vw;
+  }
+  .main-page .tabs-large-devices{
+    display: none;
+  }
+  .main-page .body-container .left-column .tabs-large-devices{
+    display: none;
+  }
+  .space{
+    padding:3px;
+  }
+  .double-rectangle{
+    padding: 3px;
+  }
+  .right-column{
+    display: none;
+  }
+  .left-column{
+    width: 100%;
+    border-right: none;
+  }  
+  .info-overview .avatar{
+    width: 85%;
+    height: fit-content;
+  } 
+  .info-overview{
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #f2f2f2;
+  }
+  .info-overview .profile{
+    padding-left: 5%;
+  }
+  h1{
+    font-size:6vw;
+    text-align: center;
+    color: #e1853d;
+  }
+  h2{
+    font-size: 5vw;
+    text-align: center;
+  }
+  .info-overview .profile .infor .col-label {
+    font-size: 3.5vw;
+  }
+  .info-overview .profile .infor .col-content{
+    font-size: 3.5vw;
+  }
+  .info-overview{
+    padding-bottom: 10px;
+  }
+  .info-detail{
+    padding-top: 20px;
+  }
+  .career-info-desktop{
+    display: none;
+  }
+  .left-column .info-detail .title{
+    background-color: white;
+    color: #e1853d;
+    text-decoration: underline;
+  }
+  .left-column .career-info-smaller-devices .title{
+    background-color: white;
+    color: #e1853d;
+    text-decoration: underline;
+  }
+  .title{
+    text-align: center;
+    font-size: 4vw;
+  }
+  .content-script{
+    font-size: 3.5vw;
+  }
+  ul li a{
+    font-size: 3.5vw;
+  }
+  .bold{
+    font-size: 3.5vw;
+  }
+  .profile .more-infor p{
+    font-size: 3.5vw;
+  }
+  .info-detail .content-script{
+    padding-left: 10px;
+  }
+  .row{
+    font-size: 4.5vw;
+  }
+  footer{
+    font-size: 3.5vw;
+  }
+
 }
